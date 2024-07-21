@@ -1,0 +1,139 @@
+body{
+    background-color: hsl(210, 46%, 95%); 
+    font-family: "Manrope", sans-serif;
+}
+.container{
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    margin-left: 80px;
+}
+.image{
+    width:315px; 
+    margin-top: 5px;
+    border-radius: 10px 0px 0px 10px;
+}
+.content{
+    background-color: white;
+    width: 350px;
+   position: relative;
+   right: 60px;
+   font-size: 13px;
+   padding: 10px 40px 10px 40px;
+   line-height: 20px;
+   color: hsl(214, 17%, 51%);
+   border-radius: 0px 10px 10px 0px;
+}
+h2{line-height: 25px;
+    color:hsl(217, 19%, 35%);}
+
+.svg:hover{
+    background-color: hsl(217, 19%, 35%);
+}    
+
+.details{
+    display: flex;
+    justify-content: space-between; 
+}
+.avatar{
+    width: 40px;
+    height: 30%;
+    border-radius: 50%; 
+}
+.svg{
+    background-color: hsl(210, 46%, 95%);
+    width: 30px;
+    border-radius: 50%;
+    height: 10px;
+    position: relative;
+    top: 10px;    
+}
+
+.list{
+    display: none;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+.list::after{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+}
+.list ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.share{
+    position: relative;
+    bottom: 10px; 
+    right: 15px; 
+}
+.icons{
+    position: relative;
+    top: 15px;
+}
+.svg svg {
+    size: 10px;
+    position: relative;
+    bottom: 5px;
+    margin: 7px;
+    margin-top: -20px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-top: -15px;
+    padding-right: 120px;
+}
+.text h3{color:hsl(217, 19%, 35%);}
+
+.date{
+    margin-top: -15px;
+}
+.svg{padding-top: 20px;}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 600px ) {
+    .container{
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .content{
+        width: 250px;
+        height: 300px;
+        margin-left: 130px;
+        border-radius: 0px 0px 10px 10px;
+        position: relative;
+        bottom: 50px;
+    }
+    .image{width: 330px;
+        height: 250px;
+        border-radius: 10px 10px 0px 0px;
+        margin-left: 10px;
+    }
+   .text{padding: 0px 10px 10px ;}
+   h2{
+    font-size: 1.2em;
+   }
+   
+}
